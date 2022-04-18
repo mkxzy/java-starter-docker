@@ -9,5 +9,10 @@ docker build -t java-start-docker .
 
 ## Run
 ```Run
-docker run -d java-start-docker -P
+docker run -d -p 8080:8080 java-start-docker 
+```
+
+## Access
+```aidl
+curl http://localhost:8080/hello
 ```
